@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(8, 8, 39, 0.918);
+    display:flex;
+    place-items:center;
+    height: 100vh;
+}
+main{
+    display: grid;
+    grid-template-areas:
+    "a a b"
+    "c d d"
+    "c e e";
+    gap: 10px;
+    margin:auto;
+    width: 450px;
+}
+
+main div{
+    padding: 2rem;
+    text-align: center;
+}
+
+.burntorange{
+    background-color: rgb(240, 88, 33);
+    grid-area: a;
+    padding: 4.5rem;
+}
+
+.orange{
+    background-color: orange;
+    grid-area: b;
+    padding: 4rem;
+}
+
+.green{
+    background-color: rgb(58, 167, 58);
+    grid-area:c;
+    padding: 4.5rem;
+}
+
+.blueone{
+    background-color:rgb(4, 168, 223);
+    grid-area: d;
+    padding: 2.3rem;
+}
+
+.bluetwo{
+    background-color:rgb(4, 168, 223);;
+    grid-area: e;
+    padding: 2.3rem;
+}
+
+.link{
+    font-family: cursive;
+    font-size: 16px;
+    background-color: orange;
+    border:2px solid  rgba(8, 8, 39, 0.918);
+    padding:10px 20px;
+    border-radius: 20px;
+    letter-spacing:2;
+    transition: all 0.3s ease-in-out;
+    position:absolute;
+    left:45%;
+    bottom: 10%;
+}
+
+.link a{
+    color:   rgba(8, 8, 39, 0.918);
+    text-decoration:none;
+    
+}
+
+.link:hover{
+    cursor:pointer;
+    transform:scale(1.05); 
+    background-color: rgb(218, 165, 68);
+}
